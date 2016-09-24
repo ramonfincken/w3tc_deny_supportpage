@@ -19,7 +19,7 @@ function mp_get__logo() {
 if(isset($_GET['page']) && $_GET['page'] == 'w3tc_support') {
 	$title= 'W3 totalcache vulnerability';
 	$logo = '';
-	if(function_exists('mp_get_logo')) {
+	if(function_exists('mp_get__logo')) {
 		$logo = mp_get__logo();
 	}
 	wp_die( '<h1>'.$title. '</h1><p>'.$logo. 'We have disabled access to this page</p>', $title);
